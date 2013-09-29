@@ -25,7 +25,7 @@ define(IMAGE_ELEM,
 define(DOWNLOAD_ELEM,
 '
                                     <div class="download">
-                                        <a href="%s">下载原片</a>
+                                        <a href="%s">打开大尺寸图</a>
                                     </div>
 ');
 
