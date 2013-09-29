@@ -1,8 +1,8 @@
 <?php
 
-define(THUMBNAIL_DIR, './images/thumb');
-define(SLIDE_DIR, './images/large');
-define(DOWNLOAD_DIR, './images/download');
+define(THUMBNAIL_DIR, dirname(__FILE__) . '/images/thumb');
+define(SLIDE_DIR, dirname(__FILE__) . '/images/large');
+define(DOWNLOAD_DIR, dirname(__FILE__) . '/images/download');
 
 define(THUMBNAIL_URL, 'content/images/thumb/%s');
 define(SLIDE_URL, 'content/images/large/%s');
@@ -30,7 +30,7 @@ define(DOWNLOAD_ELEM,
 ');
 
 $image_extensions = array('.jpg');
-$image_list_cache_file = './image_list.txt';
+$image_list_cache_file = '/tmp/image_list_' . md5(__FILE__);
 
 $image_list_cache = file_get_contents($image_list_cache_file);
 
